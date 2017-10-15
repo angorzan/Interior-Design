@@ -1,0 +1,24 @@
+header {
+    background: url('../images/banner.jpg');
+    min-height: 770px;
+    color: white;
+}
+
+header button {
+    border: 2px solid white;
+    padding: 10px 40px;
+    color: white;
+    background: grey;
+}
+    
+/* Add a black background color and some padding to the footer */
+
+#newsletter {
+    background: #13b3bb;
+}
+
+footer {
+    background-color: #000000;
+    padding: 25px;
+}
+
