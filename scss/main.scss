@@ -1,21 +1,240 @@
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/ubuntu/Ubuntu-Medium.eot');
+  src: local('../fonts/ubuntu/Ubuntu Medium'), local('../fonts/ubuntu/Ubuntu-Medium'),
+  url('../fonts/ubuntu/Ubuntu-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ubuntu/Ubuntu-Medium.woff2') format('woff2'),
+  url('../fonts/ubuntu/Ubuntu-Medium.woff') format('woff'),
+  url('../fonts/ubuntu/Ubuntu-Medium.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/ubuntu/Ubuntu-Bold.eot');
+  src: local('../fonts/ubuntu/Ubuntu Bold'), local('../fonts/ubuntu/Ubuntu-Bold'),
+  url('../fonts/ubuntu/Ubuntu-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ubuntu/Ubuntu-Bold.woff2') format('woff2'),
+  url('../fonts/ubuntu/Ubuntu-Bold.woff') format('woff'),
+  url('../fonts/ubuntu/Ubuntu-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/ubuntu/Ubuntu-LightItalic.eot');
+  src: local('../fonts/ubuntu/Ubuntu Light Italic'), local('../fonts/ubuntu/Ubuntu-LightItalic'),
+  url('../fonts/ubuntu/Ubuntu-LightItalic.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ubuntu/Ubuntu-LightItalic.woff2') format('woff2'),
+  url('../fonts/ubuntu/Ubuntu-LightItalic.woff') format('woff'),
+  url('../fonts/ubuntu/Ubuntu-LightItalic.ttf') format('truetype');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/ubuntu/Ubuntu-Regular.eot');
+  src: local('../fonts/ubuntu/Ubuntu Regular'), local('Ubuntu-Regular'),
+  url('../fonts/ubuntu/Ubuntu-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ubuntu/Ubuntu-Regular.woff2') format('woff2'),
+  url('../fonts/ubuntu/Ubuntu-Regular.woff') format('woff'),
+  url('../fonts/ubuntu/Ubuntu-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  src: url('../fonts/ubuntu/Ubuntu-Light.eot');
+  src: local('../fonts/ubuntu/Ubuntu Light'), local('../fonts/ubuntu/Ubuntu-Light'),
+  url('../fonts/ubuntu/Ubuntu-Light.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/ubuntu/Ubuntu-Light.woff2') format('woff2'),
+  url('../fonts/ubuntu/Ubuntu-Light.woff') format('woff'),
+  url('../fonts/ubuntu/Ubuntu-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Open Sans';
+  src: url('../fonts/open-sans/OpenSans-Regular.eot');
+  src: local('../fonts/open-sans/Open Sans Regular'), local('../fonts/ubuntu/OpenSans-Regular'),
+  url('../fonts/open-sans/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/open-sans/OpenSans-Regular.woff2') format('woff2'),
+  url('../fonts/open-sans/OpenSans-Regular.woff') format('woff'),
+  url('../fonts/open-sans/OpenSans-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Open Sans', Arial, sans-serif;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: 'Ubuntu', Arial, sans-serif !important;
+}
+
+/******* SEKCJA HEADER - kasia - start *******/
+
 header {
-  background: url("../images/banner.jpg");
+  background: url('../images/banner.jpg') no-repeat;
+  background-size: cover;
   min-height: 770px;
-  color: white; }
+  color: white;
+  position: relative;
+};
+
+.logo {
+  float: left;
+  height: 100px;
+  max-width:250px;
+}
+
+.logo h1{
+  font-size: 4em;
+  color: #fff;
+  font-weight: 300;
+  transform: translate(0px);
+  padding-left:35px;
+  padding-top: 15px;
+  line-height: 40%;
+}
+
+.logo span{
+  color: #24f4ff;
+  font-size: 14px;
+  padding-left:35px;
+}
+
+.logo h1::before {
+  width: 30px;
+  height: 55px;
+  border: 5px solid #24f4ff;
+  position: absolute;
+  top: 20%;
+  left: 0%;
+  content: '';
+}
+
+header h1 {
+  font-size:5em;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+header h3 {
+  font-weight: 300;
+  font-style: italic;
+  letter-spacing: 2px;
+  margin-top: -10px;
+  margin-bottom: 2em;
+}
+
+.header-titles {
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+  flex-wrap: wrap;
+  width:60%;
+  margin:13em auto 0em;
+
+}
 
 header button {
   border: 2px solid white;
+  margin-top:4em;
   padding: 10px 40px;
   color: white;
-  background: grey; }
+  background: grey;
+  letter-spacing: 1px;
+  font-weight:600;
+}
 
-/* Add a black background color and some padding to the footer */
+header button:hover{
+  background: #24f4ff;
+  color: black;
+}
+
+.navigation {
+  display: none;
+  background: #13b3bb;
+  position:absolute;
+  height: 100px;
+  z-index:1;
+  width:100%;
+}
+
+.nav-style {
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top:2.5em;
+
+}
+
+.nav-style li{
+  float:left;
+  display: inline-block;
+  margin: 5px 30px;
+  letter-spacing: 2px;
+}
+
+.nav-style a{
+  color: black;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  padding: 5px 15px;
+}
+
+.nav-style a:hover{
+  text-decoration: none;
+  color: white;
+  border-top: 2px solid white;
+  border-bottom: 2px solid white;
+}
+
+#nav-btn {
+  margin-top: -60px;
+  z-index:2;
+  float: right;
+}
+
+.btn-open:after {
+  font-family: "FontAwesome";
+  font-size: 3em;
+  content:"\f0c9";
+  color: #ffffff;
+  transition: color 200ms;
+}
+
+.btn-close:after {
+  font-family: "FontAwesome";
+  content:"\f00d";
+  color: #000000;
+  transition: color 200ms;
+}
+
+
+/******* SEKCJA HEADER - end *******/
+
 #newsletter {
-  background: #13b3bb; }
+  background: #13b3bb;
+}
 
 footer {
   background-color: #000000;
-  padding: 25px; }
+  padding: 25px;
+}
 
 /*********Adorning_events***********/
 
