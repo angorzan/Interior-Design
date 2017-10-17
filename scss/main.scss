@@ -1,0 +1,167 @@
+header {
+  background: url("../images/banner.jpg");
+  min-height: 770px;
+  color: white; }
+
+header button {
+  border: 2px solid white;
+  padding: 10px 40px;
+  color: white;
+  background: grey; }
+
+/* Add a black background color and some padding to the footer */
+#newsletter {
+  background: #13b3bb; }
+
+footer {
+  background-color: #000000;
+  padding: 25px; }
+
+/*********Adorning_events***********/
+
+.adorning_events {
+  padding: 5em 0;
+}
+
+.agileinfo_header {
+  font-size: 2em;
+  color: #212121;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  font-weight: 600;
+  padding: .5em 0;
+  position: relative;
+}
+
+.agileinfo_header::before {
+  top: 0%;
+  left: -3%;
+}
+
+.agileinfo_header::before, .agileinfo_header::after {
+  content: '';
+  background: #dadada;
+  height: 2px;
+  position: absolute;
+  width: 10%;
+}
+
+.agileinfo_header::after {
+  bottom: 0%;
+  right: 65%;
+}
+
+.agileits_dummy_para {
+  color: #999;
+  margin: 1em 0 0;
+}
+
+.w3ls_event_grids, .w3_services_grids {
+  margin: 3em 0 0;
+}
+
+.wthree_events_grid_left::before, .wthree_events_grid_left::after {
+  content: '';
+  background: #dadada;
+  height: 20px;
+  position: absolute;
+  width: 20px;
+  border-radius: 50px;
+  left: -2%;
+}
+
+.wthree_events_grid_left {
+  border-left: 2px solid #dadada;
+  position: relative;
+  padding-left: 0;
+}
+
+.wthree_events_grid_left1 {
+  min-height: 130px;
+}
+
+.wthree_events_grid_left1_gridl {
+  padding-left: 0;
+  & p {
+    text-transform: uppercase;
+    font-weight: 600;
+    padding: 2em 0 1em 0;
+    border-bottom: 1px solid #999;
+    text-align: center;
+    font-size: 13px;
+    position: relative;
+    color: #212121;
+    &::before {
+      content: '';
+      background: #13b3bb;
+      width: 5px;
+      height: 5px;
+      border-radius: 10px;
+      position: absolute;
+      left: -2%;
+      bottom: -5%;
+    }
+  }
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Ubuntu', sans-serif;
+  margin: 0;
+}
+
+.wthree_events_grid_left1_gridr {
+  h4 a {
+    text-transform: capitalize;
+    font-size: 1em;
+    color: #212121;
+    text-decoration: none;
+  }
+  p {
+    margin: 1em 0 0;
+    color: #999;
+    line-height: 2em;
+  }
+}
+
+.wthree_events_grid_right {
+  position: relative;
+  background: url("../images/8.jpg") no-repeat 0px 0px;
+  min-height: 400px;
+  padding: 3em;
+}
+
+
+.wthree_events_grid_right1 {
+  padding: 2em;
+  background: rgba(9, 243, 255, 0.45);
+  height: 305px;
+  text-align: center;
+  h3 {
+    font-size: 3em;
+    color: #fff;
+    text-transform: capitalize;
+    border-bottom: 1px solid;
+  }
+}
+
+
+.wthree_events_grid_right1 {
+  h3 span {
+    font-size: .5em;
+  }
+
+  h2 {
+    text-transform: uppercase;
+    font-size: 4em;
+    color: #fff;
+    letter-spacing: 30px;
+    margin-top: .5em;
+
+  }
+
+  h2 span {
+
+    display: block;
+  }
+}
